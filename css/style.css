@@ -162,13 +162,59 @@ body {
   }
 }
 /* card */
-.card {
-  overflow: hidden;
-}
-.card img {
-  transition: all 1.2s ease;
-}
-.card:hover img {
-  transform: scale(1.2);
-}
+
 /* service */
+.content-box {
+  background: #000;
+
+  color: #fff;
+}
+h1 {
+  text-align: center;
+  padding-top: 100px;
+}
+h1::after {
+  content: '';
+  background: #008000;
+  display: block;
+  height: 3px;
+  width: 170px;
+  margin: 20px auto 50px;
+}
+.service .icon {
+  font-size: 30px;
+  margin: 20px auto;
+  padding: 18px;
+  height: 70px;
+  width: 70px;
+  border: 1px solid #008000;
+  border-radius: 50%;
+  color: #008000;
+}
+.service p {
+  font-size: 15px;
+  margin-top: 10px;
+  color: #fff;
+  padding: 20px;
+}
+.service span {
+  color: #008000;
+  transition: 0.5s;
+}
+.service .col-md-4:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #008000);
+  cursor: pointer;
+  color: #000;
+  box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+}
+.service .col-md-4:hover .icon {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.service .col-md-4:hover p {
+  color: #fff;
+}
+.service .col-md-4:hover span {
+  color: #fff;
+}
